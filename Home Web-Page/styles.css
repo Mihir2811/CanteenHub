@@ -1,0 +1,155 @@
+/* Google Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #fff8f0;
+    color: #333;
+  }
+  
+  /* Utility */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #ff5722;
+    padding: 1rem 0;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-links li a {
+    color: white;
+    font-weight: 500;
+  }
+  .signin-btn {
+    background-color: #fff;
+    color: #ff5722;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .signin-btn:hover {
+    background-color: #ffe4d1;
+  }
+  .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url(./img.jpeg) center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: #ff5722;
+    color: white;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  .cta:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Sections */
+  .section {
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff5722;
+  }
+  .section p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: auto;
+  }
+  .section a {
+    color: #ff5722;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #ff5722;
+      position: absolute;
+      right: 1rem;
+      top: 70px;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .nav-links.active {
+      display: flex;
+    }
+    .signin-btn {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+    .hero h1 {
+      font-size: 2rem;
+    }
+    .hero p {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Canteen Hub</title>
+  <link rel="stylesheet" href="styles.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <header>
+    <div class="container nav-container">
+      <div class="logo">🍽 Canteen Hub</div>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+        <button class="signin-btn" onclick="signIn()">Sign In</button>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Delicious Food at Your Fingertips</h1>
+      <p>Your favorite meals, just a few clicks away.</p>
+      <a href="#menu" class="cta">Explore Menu</a>
+    </div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>Canteen Hub is your all-in-one platform for ordering mouth-watering meals from your local canteen with speed and ease. We connect you to your cravings.</p>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Email us at <a href="mailto:support@Canteen Hub.com">support@MR.com</a><br>or call +91 12345 67890.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Canteen Hub | Made with Love for food lovers</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
